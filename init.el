@@ -46,6 +46,14 @@
 ;;Let emacs-lisp has grammer highlight in org-mode
 (require 'org)
 (setq org-src-fontify-natively t)
+;;2018-10-24 Albert added to support scheme
+(setq scheme-program-name "mit-scheme")
+
+;;always do syntax highlighting, also highlight parens
+(global-font-lock-mode 1)
+(setq show-paren-delay 0
+      show-paren-style 'parenthesis)
+(show-paren-mode 1)
 ;;end
 ;;--------END SETTING--------
 ;;enable recent mode
